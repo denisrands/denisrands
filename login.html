@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Survey form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form action="submit.php" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required> <br>
+
+      <label for="email">Email:</label> <br>
+      <input type="email" id="email" name="email" required> <br>
+
+      <label for="age">Age:</label> <br>
+      <input type="number" id="age" name="age" required> <br>
+
+      <label for="gender">Gender:</label> <br>
+      <input type="radio" id="male" name="gender" value="male" required> <br>
+      <label for="male">Male</label> <br>
+      <input type="radio" id="female" name="gender" value="female"> <br>
+      <label for="female">Female</label> <br>
+      <input type="radio" id="other" name="gender" value="other"> <br>
+      <label for="other">Other</label> <br>
+
+      <label for="country">Country:</label> <br>
+      <select id="country" name="country" required> <br>
+        <option value="">Select your country</option> <br>
+        <option value="kenya">Kenya</option> <br>
+        <option value="usa">usa</option> <br>
+        <option value="japan">japan</option> <br>
+      </select> <br>
+
+      <label for="feedback">Feedback:</label> <br>
+      <textarea id="feedback" name="feedback" rows="4" required></textarea> <br>
+
+      <label for="agree"> <br>
+        <input type="checkbox" id="agree" name="agree" required> <br>
+        I agree to the terms and conditions.
+      </label>
+
+      <div class="submit-button"> <br>
+        <button type="submit">Submit</button>
+</body>
+</html>
